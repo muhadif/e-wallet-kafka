@@ -1,0 +1,20 @@
+syntax = "proto3";
+package wallet_contract;
+
+import "google/protobuf/timestamp.proto";
+
+message Deposit {
+  int32 amount = 1;
+  string walletID = 2;
+}
+
+message Balance {
+  int32 amount = 1;
+  string walletID = 2;
+}
+
+message AboveThreshold {
+  int32 amount = 1;
+  string walletID = 2;
+  string cycleTime = 3;
+}
